@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './App.css';
 import Register from './components/Register/Register';
 import Login from './components/Login/Login';
-import pic from './Matlock-Image.jpeg';
+import logo from './Matlock-Image.jpeg';
 class App extends React.Component {
   state = {
     data: null
@@ -48,7 +48,7 @@ class App extends React.Component {
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
             </Switch>
-            <img src={pic} alt="Matlock-Image"/>
+            <img src={logo} alt="Matlock-Image"/>
           </main>
         </div>
       </Router>
